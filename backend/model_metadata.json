@@ -1,0 +1,61 @@
+{
+  "model_type": "XGBoost Classifier",
+  "feature_columns": [
+    "age",
+    "bmi",
+    "has_allergies",
+    "prior_covid_infection",
+    "underlying_conditions",
+    "biomarker_wbc_count",
+    "proposed_dosage_ml"
+  ],
+  "metrics": {
+    "accuracy": 0.9167,
+    "precision": 0.8462,
+    "recall": 0.934,
+    "f1_score": 0.8879,
+    "roc_auc": 0.9724,
+    "confusion_matrix": [
+      [
+        176,
+        18
+      ],
+      [
+        7,
+        99
+      ]
+    ]
+  },
+  "feature_importances": [
+    {
+      "feature": "underlying_conditions",
+      "importance": 0.3144
+    },
+    {
+      "feature": "biomarker_wbc_count",
+      "importance": 0.2823
+    },
+    {
+      "feature": "proposed_dosage_ml",
+      "importance": 0.1955
+    },
+    {
+      "feature": "has_allergies",
+      "importance": 0.1295
+    },
+    {
+      "feature": "bmi",
+      "importance": 0.0292
+    },
+    {
+      "feature": "age",
+      "importance": 0.0285
+    },
+    {
+      "feature": "prior_covid_infection",
+      "importance": 0.0205
+    }
+  ],
+  "train_samples": 1200,
+  "test_samples": 300
+}
